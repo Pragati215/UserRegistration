@@ -33,3 +33,14 @@ then
 else
     echo "no"
 fi
+
+#UC4
+
+read -p "enter a mobile no " no
+p4='^((\+)?91)[ ]?[7896]{1}[0-9]{9}$'
+if [[ $no =~ $p4 ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi

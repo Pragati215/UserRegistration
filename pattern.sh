@@ -68,3 +68,17 @@ then
 else
     echo "no"
 fi
+
+
+
+#UC7
+
+read -p "enter a pasword " R
+p7='^[A-Z]{1}[+a-zA-Z0-9]{8,}$'
+if [[ $R =~ $p7 ]]
+then
+    echo "yes"
+else
+    echo "no"
+fi
+

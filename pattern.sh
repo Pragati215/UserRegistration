@@ -42,7 +42,7 @@ else
 fi
 
 #UC5
-read -p "enter a pasword " p
+read -p "enter a pasword type one " p
 Pattern5='^[a-zA-Z]{1,8}$'
 if [[ $p =~ $Pattern5 ]]
 then
@@ -52,7 +52,7 @@ else
 fi
 
 #UC6
-read -p "enter a pasword " Q
+read -p "enter a pasword type two " Q
 Pattern6='^[A-Z]{1}[a-zA-Z]{8,}$';
 if [[ $Q =~ $Pattern6 ]]
 then
@@ -62,7 +62,7 @@ else
 fi
 
 #UC7
-read -p "enter a pasword " R
+read -p "enter a pasword type three " R
 p7='^[A-Z]{1}[+a-zA-Z0-9]{8,}$'
 if [[ $R =~ $p7 ]]
 then
@@ -72,7 +72,7 @@ else
 fi
 
 #UC8
-read -p "enter a pasword " S
+read -p "enter a pasword type four " S
 Pattern8='^[A-Z]{1}[a-zA-Z0-9]*[+.@$#&!*%][+0-9]{8,}$'
 
 if [[ $S =~ $Pattern8 ]]

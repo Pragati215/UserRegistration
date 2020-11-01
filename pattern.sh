@@ -3,8 +3,8 @@
 #UC1
 
 read -p "enter a name " name
-p1='^[A-Z]{1}[a-zA-Z]{3,15}$';
-if [[ $name =~ $p1 ]]
+Pattern1='^[A-Z]{1}[a-zA-Z]{3,15}$';
+if [[ $name =~ $Pattern1 ]]
 then
     echo "yes"
 else
@@ -14,8 +14,8 @@ fi
 #UC2
 
 read -p "enter a surname " surname
-p2='^[A-Z]{1}[a-zA-Z]{3,15}$';
-if [[ $surname =~ $p2 ]]
+Pattern2='^[A-Z]{1}[a-zA-Z]{3,15}$';
+if [[ $surname =~ $Pattern2 ]]
 then
     echo "yes"
 else
@@ -26,8 +26,8 @@ fi
 #UC3
 
 read -p "enter a emailid " emailid
-p3="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
-if [[ $emailid =~ $p3 ]]
+Pattern3="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
+if [[ $emailid =~ $Pattern3 ]]
 then
     echo "yes"
 else
@@ -37,8 +37,8 @@ fi
 #UC4
 
 read -p "enter a mobile no " no
-p4='^((\+)?91)[ ]?[7896]{1}[0-9]{9}$'
-if [[ $no =~ $p4 ]]
+Pattern4='^((\+)?91)[ ]?[7896]{1}[0-9]{9}$'
+if [[ $no =~ $Pattern4 ]]
 then
     echo "yes"
 else

@@ -3,8 +3,8 @@
 #UC1
 
 read -p "enter a name " name
-p1='^[A-Z]{1}[a-zA-Z]{3,15}$';
-if [[ $name =~ $p1 ]]
+Pattern1='^[A-Z]{1}[a-zA-Z]{3,15}$';
+if [[ $name =~ $Pattern1 ]]
 then
     echo "yes"
 else
@@ -14,8 +14,8 @@ fi
 #UC2
 
 read -p "enter a surname " surname
-p2='^[A-Z]{1}[a-zA-Z]{3,15}$';
-if [[ $surname =~ $p2 ]]
+Pattern2='^[A-Z]{1}[a-zA-Z]{3,15}$';
+if [[ $surname =~ $Pattern2 ]]
 then
     echo "yes"
 else
@@ -26,8 +26,8 @@ fi
 #UC3
 
 read -p "enter a emailid " emailid
-p3="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
-if [[ $emailid =~ $p3 ]]
+Pattern3="^[a-zA-Z._-]+@(gmail|bl|yahoo)+.(com|co|in)";
+if [[ $emailid =~ $Pattern3 ]]
 then
     echo "yes"
 else
@@ -37,8 +37,8 @@ fi
 #UC4
 
 read -p "enter a mobile no " no
-p4='^((\+)?91)[ ]?[7896]{1}[0-9]{9}$'
-if [[ $no =~ $p4 ]]
+Pattern4='^((\+)?91)[ ]?[7896]{1}[0-9]{9}$'
+if [[ $no =~ $Pattern4 ]]
 then
     echo "yes"
 else
@@ -49,8 +49,8 @@ fi
 #UC5
 
 read -p "enter a pasword " p
-p5='^[a-zA-Z]{1,8}$'
-if [[ $p =~ $p5 ]]
+Pattern5='^[a-zA-Z]{1,8}$'
+if [[ $p =~ $Pattern5 ]]
 then
     echo "yes"
 else
@@ -61,8 +61,8 @@ fi
 #UC6
 
 read -p "enter a pasword " Q
-p6='^[A-Z]{1}[a-zA-Z]{8,}$';
-if [[ $Q =~ $p6 ]]
+Pattern6='^[A-Z]{1}[a-zA-Z]{8,}$';
+if [[ $Q =~ $Pattern6 ]]
 then
     echo "yes"
 else
@@ -74,8 +74,8 @@ fi
 #UC7
 
 read -p "enter a pasword " R
-p7='^[A-Z]{1}[+a-zA-Z0-9]{8,}$'
-if [[ $R =~ $p7 ]]
+Pattern7='^[A-Z]{1}[+a-zA-Z0-9]{8,}$'
+if [[ $R =~ $Pattern7 ]]
 then
     echo "yes"
 else
@@ -86,9 +86,9 @@ fi
 #UC8
 
 read -p "enter a pasword " S
-p8='^[A-Z]{1}[a-zA-Z0-9]*[+.@$#&!*%][+0-9]{8,}$'
+Pattern8='^[A-Z]{1}[a-zA-Z0-9]*[+.@$#&!*%][+0-9]{8,}$'
 
-if [[ $S =~ $p8 ]]
+if [[ $S =~ $Pattern8 ]]
 then
     echo "yes"
 else
@@ -99,8 +99,8 @@ fi
 #UC9
 
 read -p "enter a email " T
-p9="^[a-zA-Z0-9._-+]+@(gmail|abc|yahoo)+.(com|co|in)";
-if [[ $T =~ $p9 ]]
+Pattern9="^[a-zA-Z0-9._-+]+@(gmail|abc|yahoo)+.(com|co|in)";
+if [[ $T =~ $Pattern9 ]]
 then
     echo "yes"
 else
